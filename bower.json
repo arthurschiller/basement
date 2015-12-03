@@ -1,0 +1,25 @@
+{
+  "name": "basement",
+  "description": "Super simple web-scaffold with bower, gulp, sass and other fine stuff..",
+  "main": "index.html",
+  "authors": [
+    "Arthur Schiller <kontakt@arthurschiller.de>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "html5",
+    "sass",
+    "gulp",
+    "bourbon"
+  ],
+  "homepage": "https://github.com/arthurschiller/basement",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

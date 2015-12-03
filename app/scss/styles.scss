@@ -1,8 +1,13 @@
-// styles.scss
-.testing {
-  width: percentage(5/7);
-}
+/* 
+/// Use this file to import all your sass files that should be included in the main stylesheet. ///
+*/
 
-body {
-	background: green;
-}
+// Import our helpers
+@import 'helper/normalize';
+@import 'helper/reset';
+@import 'helper/bourbon/bourbon';
+@import 'helper/init-fonts';
+@import 'helper/mixins';
+
+// Import general css
+@import 'styles/main';

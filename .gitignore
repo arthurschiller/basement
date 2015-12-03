@@ -1,2 +1,7 @@
+dist
+node_modules
 .sass-cache
+*.sassc
+*.scssc
+*.log
 *.css.map

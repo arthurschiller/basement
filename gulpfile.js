@@ -1,12 +1,18 @@
-var gulp = require('gulp'),
-	sass = require('gulp-sass');
-	browserSync = require('browser-sync'),
-	useref = require('gulp-useref'),
-	gulpif = require('gulp-if'),
-    uglify = require('gulp-uglify'),
-    minifyCss = require('gulp-minify-css'),
-    del = require('del'),
-    runSequence = require('run-sequence');
+/* 
+/// For easy understanding this gulpfile is mainly based on this tutorial: https://css-tricks.com/gulp-for-beginners ///
+*/
+
+// load our plugins
+var gulp = 			require('gulp'),
+	sass = 			require('gulp-sass');
+	browserSync = 	require('browser-sync'),
+	useref = 		require('gulp-useref'),
+	gulpif = 		require('gulp-if'),
+    uglify = 		require('gulp-uglify'),
+    minifyCss = 	require('gulp-minify-css'),
+    cache =			require('gulp-cache'),
+    del = 			require('del'),
+    runSequence = 	require('run-sequence');
 
 
 // Compile SASS, start server, browser sync
@@ -38,31 +44,38 @@ gulp.task('browserSync', function(){
 gulp.task('useref', function () {
     return gulp.src('app/*.html')
         .pipe(useref())
-        .pipe(gulpif('*.js', uglify()))
         .pipe(gulpif('*.css', minifyCss()))
+        .pipe(gulpif('*.js', uglify()))
         .pipe(gulp.dest('dist'));
 });
 
 
-// Copy Fonts
+// Copy fonts
 gulp.task('fonts', function() {
   return gulp.src('app/fonts/**/*')
   .pipe(gulp.dest('dist/fonts'))
 })
 
+// Copy images
+gulp.task('images', function() {
+  return gulp.src('app/images/**/*')
+  .pipe(gulp.dest('dist/images'))
+})
 
-// Clean
+gulp.task('copyAssets', function(callback) {
+  runSequence('fonts', 'images'),
+  callback
+})
+
+
+// Clean dist
 gulp.task('clean', function(callback) {
   del('dist');
   return cache.clearAll(callback);
 })
 
-gulp.task('clean:dist', function(callback) {
-  del(['dist/**/*', '!dist/images', '!dist/images/**/*'], callback)
-});
 
-
-// Build
+// Build tasks
 gulp.task('default', function(callback) {
   runSequence(['sass', 'browserSync', 'watch'],
     callback
@@ -70,8 +83,9 @@ gulp.task('default', function(callback) {
 })
 
 gulp.task('build', function(callback) {
-  runSequence('clean:dist', 
-    ['sass', 'useref', 'fonts'],
+  runSequence('clean', 
+    ['sass', 'useref'],
+    'copyAssets',
     callback
   )
 })
