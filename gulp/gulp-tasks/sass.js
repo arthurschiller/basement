@@ -5,7 +5,6 @@ sass = require('gulp-sass');
 plumber = require('gulp-plumber'),
 browserSync = require('browser-sync'),
 uglify = require('gulp-uglify'),
-minifyCss = require('gulp-minify-css'),
 autoprefixer = require('gulp-autoprefixer'),
 sassModuleImporter = require('sass-module-importer');
 
