@@ -8,13 +8,24 @@ function fromRootDir(matchPath) {
 module.exports = {
 	cache: true,
 	debug: true,
-	devtool: 'eval',
-	entry: './app/src/js/main.js',
+	devtool: ['eval', 'source-map'],
+	entry: './dev/src/js/main.js',
 	output: {
-		path: path.join(__dirname, "app/build/js"),
-		filename: 'bundle.min.js'
+		path: path.join(__dirname, "dev/build/js"),
+		filename: 'bundle.js'
 	},
 	resolve: {
 		extensions: ['', '.js', '.json', '.coffee']
-	}
+	},
+	loaders: [
+		{
+			test: /\.js$/,
+			loader: 'babel',
+			exclude: /(node_modules|bower_components)/,
+			query: {
+				plugins: ['transform-runtime'],
+				presets: ['es2015', 'stage-0'],
+			}
+		}
+	]
 };
