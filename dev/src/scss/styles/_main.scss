@@ -1,0 +1,22 @@
+/* 
+/// The place to be for all the main style rules... ///
+*/
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-font-smoothing: antialiased;
+}
+
+.greeting {
+	font-size: 60px;
+}

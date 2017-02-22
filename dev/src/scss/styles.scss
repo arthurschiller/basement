@@ -1,0 +1,21 @@
+/* 
+/// Use this file to import all your sass files that should be included in the main stylesheet. ///
+*/
+
+// ## Import helpers
+@import 'helper/normalize';
+@import 'helper/reset';
+@import 'node_modules/bourbon/app/assets/stylesheets/bourbon';
+@import 'helper/init-fonts';
+@import 'helper/mixins';
+
+// ## Bourbon Settings
+$prefix-for-webkit:    false;
+$prefix-for-mozilla:   false;
+$prefix-for-microsoft: false;
+$prefix-for-opera:     false;
+$prefix-for-spec:      false;
+
+// ## Import general css
+@import 'styles/main';
+@import 'styles/partials/sample-partial';
