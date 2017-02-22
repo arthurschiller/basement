@@ -1,6 +1,5 @@
 # basement
-Super simple web-scaffold with gulp, sass and other fine stuff.
-The gulpfile is build around this sweet [Tutorial] by [Zell Liew]. So it's pretty easy to follow.
+Super simple scaffold for web projects with gulp, sass, webpack, …
 
 ## Installation
 First make sure you have nodeJS installed on your machine.
@@ -20,27 +19,29 @@ $ npm install
 ### Tasks
 To:
   - start a webserver
-  - compile your sass
-  - minify your your js and css
+  - compile your sass and js
   - refresh the browser the moment you refresh files
 
 you can just use the default gulp task
 ```sh
 $ gulp
 ```
+or
+```sh
+$ gulp dev
+```
 
 
 And to:
   - build your project for distribution
-  - copy all your assets
+  - copy over all your assets
 
 use: 
 ```sh
-$ gulp build
+$ gulp dist
 ```
 
 ### Development
 Feedback, improvements, forks etc. are of course welcome! :)
 
    [Tutorial]: <https://css-tricks.com/gulp-for-beginners/>
-   [Zell Liew]: <http://www.zell-weekeat.com>
