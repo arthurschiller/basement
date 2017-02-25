@@ -2,14 +2,22 @@
 /// Use this file to import all your sass files that should be included in the main stylesheet. ///
 */
 
-// ## Import helpers
+@import 'variables';
+
+// ## Import helpers and libraries
 @import 'helper/normalize';
 @import 'helper/reset';
-@import 'node_modules/bourbon/app/assets/stylesheets/bourbon';
-@import 'helper/init-fonts';
 @import 'helper/mixins';
+@import 'helper/functions';
+@import 'node_modules/bourbon/app/assets/stylesheets/bourbon';
+@import 'node_modules/scss-flex-grid/flex-grid';
+@import 'helper/init-fonts';
 
 // ## Bourbon Settings
+
+/*
+Prefixes will be handled by autoprefixer.
+*/
 $prefix-for-webkit:    false;
 $prefix-for-mozilla:   false;
 $prefix-for-microsoft: false;

@@ -1,0 +1,106 @@
+//## Global stuff
+$debugModeOn: false;
+
+$z-indexes: (
+	"modal",
+	"content",
+	"page-wrapper",
+);
+
+
+//## Dimensions
+$containerMaxWidth: rem(1200);
+$contentMaxWidth: rem(850);
+$globalBorderRadius: 4px;
+$globalRoundedRadius: rem(100);
+
+$globalBaseMargin: 1.5rem;
+
+
+//## Colors
+$primaryColor: #2EECCC;
+$secondaryColor: #3B4B48;
+
+
+//## Breakpoints
+$breakpoints: (
+	extra-small : 320px,
+	small : 540px,
+	medium: 768px,
+	large : 940px,
+);
+
+
+//## Typography
+$primaryFontNameString: "cera";
+$secondaryFontNameString: "gasposlab";
+
+$primaryFont: $primaryFontNameString, sans-serif;
+$secondaryFont: $secondaryFontNameString, serif;
+
+$p-font-sizes: (
+	null  : (16px, 1.4),
+	small : 18px,
+	medium: (19px, 1.5),
+	large : (20px, 1.55),
+);
+
+$h1-font-sizes: (
+	null  : (30px, 1.4),
+	small : 32px,
+	medium: 34px,
+	large : 36px,
+);
+
+$h2-font-sizes: (
+	null  : (28px, 1.4),
+	small : 30px,
+	medium: 32px,
+	large : 34px,
+);
+
+$h3-font-sizes: (
+	null  : (26px, 1.4),
+	small : 28px,
+	medium: 30px,
+	large : 32px,
+);
+
+$h4-font-sizes: (
+	null  : (24px, 1.4),
+	small : 26px,
+	medium: 28px,
+	large : 30px,
+);
+
+$h5-font-sizes: (
+	null  : 22px,
+	small : 24px,
+	medium: 26px,
+	large : 28px,
+);
+
+$h6-font-sizes: (
+	null  : 20px,
+	small : 22px,
+	medium: 24px,
+	large : 26px,
+);
+
+
+//## Grid settings
+$fg-columns: 12 !default;
+$fg-gutter: 0.5rem !default;
+
+$fg-class-row: 'row' !default;
+$fg-class-col: 'col' !default;
+$fg-class-off: 'off' !default;
+$fg-breakpoints: (
+	(xs),
+	(sm, 768px),
+	(md, 940px),
+	(lg, 1200px)
+) !default;
+
+//## Animations/Transitions
+$default-easing: cubic-bezier(0.13, 0.85, 0.75, 0.96);

@@ -6,17 +6,17 @@
 	box-sizing: border-box;
 }
 
-html, body {
+html {
 	height: 100%;
 }
 
 body {
 	display: flex;
+	flex-flow: column wrap;
 	align-items: center;
 	justify-content: center;
+	min-height: 100%;
 	-webkit-font-smoothing: antialiased;
-}
-
-.greeting {
-	font-size: 60px;
+	color: $secondaryColor;
+	text-align: center;
 }
