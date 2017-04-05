@@ -43,5 +43,3 @@ $ gulp dist
 
 ### Development
 Feedback, improvements, forks etc. are of course welcome! :)
-
-   [Tutorial]: <https://css-tricks.com/gulp-for-beginners/>

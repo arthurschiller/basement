@@ -1,7 +1,11 @@
+.sass-cache/
+node_modules/
+npm-debug.log
+bower_components/
+.DS_Store
+temp/
 dev/compiled
 dist
-node_modules
-bower_components
 .tmp
 .sass-cache
 *.sassc
