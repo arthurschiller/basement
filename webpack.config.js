@@ -11,7 +11,7 @@ module.exports = {
 	devtool: ['eval', 'source-map'],
 	entry: './dev/src/js/main.js',
 	output: {
-		path: path.join(__dirname, "dev/build/js"),
+		path: path.join(__dirname, "dev/js"),
 		filename: 'bundle.js'
 	},
 	resolve: {
