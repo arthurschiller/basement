@@ -10,7 +10,7 @@ requireDir('./gulp/gulp-tasks');
 
 //## Default task
 gulp.task('default', function(callback) {
-	runSequence(['webpack', 'sass', 'watch'], callback)
+	runSequence(['webpack', 'sass', 'watch', 'modernizr'], callback)
 })
 
 gulp.task('dev', ['default'])

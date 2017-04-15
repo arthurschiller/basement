@@ -16,7 +16,7 @@ gulp.task('sass', function(){
 		errLogToConsole: false 
 	}))
 	.pipe(autoprefixer(config.autoprefixerOptions))
-	.pipe(gulp.dest(config.src + '/compiled/css'))
+	.pipe(gulp.dest(config.src + '/css'))
 	.pipe(browserSync.reload({
 		stream: true
 	}))
