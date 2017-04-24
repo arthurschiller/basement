@@ -1,7 +1,7 @@
-var gulp = require('gulp'),
+const gulp = require('gulp'),
 config = require('../config.js'),
 cache = require('gulp-cache'),
-del = require('del');
+del = require('del')
 
 gulp.task('clean', function(callback) {
 	del.sync(config.dist);

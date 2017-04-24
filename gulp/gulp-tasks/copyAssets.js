@@ -1,6 +1,6 @@
-var gulp = require('gulp'),
+const gulp = require('gulp'),
 config = require('../config.js'),
-runSequence = require('run-sequence');
+runSequence = require('run-sequence')
 
 gulp.task('copyAssets', function(callback) {
 	runSequence('fonts', 'images', 'copySVG'),

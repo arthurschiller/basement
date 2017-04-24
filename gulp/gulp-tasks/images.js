@@ -1,5 +1,5 @@
-var gulp = require('gulp'),
-config = require('../config.js');
+const gulp = require('gulp'),
+config = require('../config.js')
 
 gulp.task('images', function() {
 	return gulp.src(config.src + '/images/**/*')

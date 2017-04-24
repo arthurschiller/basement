@@ -1,61 +1,59 @@
 {
-	"name": "basement",
-	"version": "1.0.2",
-	"description": "Super simple web-scaffold with gulp, sass, webpack and other fine stuff..",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/arthurschiller/basement.git"
-	},
-	"keywords": [
-		"html5",
-		"sass",
-		"gulp",
-		"webpack",
-		"bourbon"
-	],
-	"author": "Arthur Schiller",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/arthurschiller/basement/issues"
-	},
-	"homepage": "https://github.com/arthurschiller/basement#readme",
-	"devDependencies": {
-		"babel-core": "^6.23.1",
-		"babel-loader": "^6.3.2",
-		"babel-plugin-transform-runtime": "^6.1.2",
-		"babel-preset-es2015": "^6.22.0",
-		"babel-preset-stage-0": "^6.22.0",
-		"babel-runtime": "^5.8.0",
-		"bourbon": "^4.3.4",
-		"browser-sync": "^2.17.0",
-		"browser-sync-webpack-plugin": "^1.1.3",
-		"del": "^2.1.0",
-		"gulp": "^3.9.0",
-		"gulp-autoprefixer": "^3.1.1",
-		"gulp-babel": "^6.1.2",
-		"gulp-cache": "^0.4.1",
-		"gulp-clean-css": "^3.0.3",
-		"gulp-flatten": "^0.2.0",
-		"gulp-if": "^2.0.0",
-		"gulp-modernizr": "^1.0.0-alpha",
-		"gulp-plumber": "^1.0.1",
-		"gulp-rename": "^1.2.2",
-		"gulp-sass": "^2.1.0",
-		"gulp-sourcemaps": "^1.6.0",
-		"gulp-svg-sprite": "^1.3.6",
-		"gulp-uglify": "^1.5.1",
-		"gulp-useref": "^3.0.3",
-		"gulp-util": "^3.0.7",
-		"node-bourbon": "^4.2.8",
-		"require-dir": "^0.3.0",
-		"run-sequence": "^1.1.5",
-		"sass-module-importer": "^1.4.0",
-		"scss-flex-grid": "^0.3.5",
-		"webpack": "^1.14.0",
-		"webpack-stream": "^3.2.0"
-	}
+  "name": "basement",
+  "version": "1.0.2",
+  "description": "Super simple web-scaffold with gulp, sass, webpack and other fine stuff..",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurschiller/basement.git"
+  },
+  "keywords": [
+    "html5",
+    "sass",
+    "gulp",
+    "webpack",
+    "bourbon"
+  ],
+  "author": "Arthur Schiller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arthurschiller/basement/issues"
+  },
+  "homepage": "https://github.com/arthurschiller/basement#readme",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "browser-sync": "^2.17.0",
+    "del": "^2.1.0",
+    "eslint": "^3.19.0",
+    "eslint-loader": "^1.7.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-cache": "^0.4.1",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-flatten": "^0.3.1",
+    "gulp-if": "^2.0.0",
+    "gulp-modernizr": "^1.0.0-alpha",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-svg-sprite": "^1.3.6",
+    "gulp-uglify": "^2.1.2",
+    "gulp-useref": "^3.0.3",
+    "gulp-util": "^3.0.7",
+    "node-bourbon": "^4.2.8",
+    "path": "^0.12.7",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.5",
+    "sass-module-importer": "^1.4.0",
+    "scss-flex-grid": "^0.3.5",
+    "webpack": "^2.4.1",
+    "webpack-stream": "^3.2.0"
+  }
 }
