@@ -10,7 +10,7 @@ requireDir('./gulp/gulp-tasks');
 
 //## Default task
 gulp.task('default', function(callback) {
-	runSequence(['webpack', 'sass', 'watch', 'modernizr'], callback)
+    runSequence(['webpack', 'sass', 'watch', 'modernizr'], callback)
 })
 
 gulp.task('dev', ['default'])
@@ -19,10 +19,10 @@ gulp.task('dev', ['default'])
 var gulp_src = gulp.src;
 
 gulp.src = function() {
-	return gulp_src.apply(gulp, arguments)
-		.pipe(plumber(function(error) {
-			gutil.log(gutil.colors.red('Error (' + error.plugin + '): ' + error.message));
-			this.emit('end');
-		})
-	);
+    return gulp_src.apply(gulp, arguments)
+    .pipe(plumber(function(error) {
+        gutil.log(gutil.colors.red('Error (' + error.plugin + '): ' + error.message));
+        this.emit('end');
+    })
+    );
 };

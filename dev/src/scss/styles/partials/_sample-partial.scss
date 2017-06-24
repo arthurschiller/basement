@@ -2,23 +2,23 @@
 Sample code for the hello world page
 */
 .container {
-	margin: $fg-gutter * 2;
+    margin: $fg-gutter * 2;
 }
 
 .greeting {
-	font-size: 60px;
-	margin-bottom: $fg-gutter * 2;
+    font-size: 60px;
+    margin-bottom: $fg-gutter * 2;
 }
 
 .testgrid .col-content {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: $fg-gutter * 2;
-	min-height: 50px;
-	background: $primaryColor;
-	color: #FFF;
-	font-size: 14px;
-	font-weight: bold;
-	border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $fg-gutter * 2;
+    min-height: 50px;
+    background: $primaryColor;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
 }

@@ -6,9 +6,9 @@ uglify = require('gulp-uglify'),
 cleanCSS = require('gulp-clean-css')
 
 gulp.task('useref', function () {
-	return gulp.src(config.paths.html)
-	.pipe(useref())
-	.pipe(gulpif('*.css', cleanCSS({compatibility: 'ie8'})))
-	.pipe(gulpif('*.js', uglify()))
-	.pipe(gulp.dest(config.dist))
+    return gulp.src(config.paths.html)
+    .pipe(useref())
+    .pipe(gulpif('*.css', cleanCSS({compatibility: 'ie8'})))
+    .pipe(gulpif('*.js', uglify()))
+    .pipe(gulp.dest(config.dist))
 })

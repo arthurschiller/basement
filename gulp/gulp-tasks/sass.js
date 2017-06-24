@@ -12,22 +12,22 @@ rename = require('gulp-rename'),
 sassModuleImporter = require('sass-module-importer')
 
 gulp.task('sass', function(){
-	return gulp.src(config.paths.scss)
-	.pipe(sass({
-		includePaths: config.sassPaths, 
-		importer: sassModuleImporter(),
-		errLogToConsole: false 
-	}))
-	.pipe(sourcemaps.init())
-		.pipe(autoprefixer(config.autoprefixerOptions))
-		.pipe(gulp.dest(config.src + '/css'))
-	.pipe(sourcemaps.write('maps'))
-	.pipe(cleanCSS({
-		compatibility: 'ie8'
-	}))
-	.pipe(rename({suffix: '.min'}))
-	.pipe(gulp.dest(config.src + '/css'))
-	.pipe(browserSync.reload({
-		stream: true
-	}))
+    return gulp.src(config.paths.scss)
+    .pipe(sass({
+        includePaths: config.sassPaths, 
+        importer: sassModuleImporter(),
+        errLogToConsole: false 
+    }))
+    .pipe(sourcemaps.init())
+    .pipe(autoprefixer(config.autoprefixerOptions))
+    .pipe(gulp.dest(config.src + '/css'))
+    .pipe(sourcemaps.write('maps'))
+    .pipe(cleanCSS({
+        compatibility: 'ie8'
+    }))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest(config.src + '/css'))
+    .pipe(browserSync.reload({
+        stream: true
+    }))
 })

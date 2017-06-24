@@ -1,3 +1,3 @@
 module.exports = function (name, element) {
-	element.innerHTML = 'Hello ' + name + '!';
-};
+    element.innerHTML = 'Hello ' + name + '!'
+}
